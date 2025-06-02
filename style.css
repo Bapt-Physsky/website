@@ -1,0 +1,99 @@
+/*
+Ceci est pour faire un commentaire
+*/
+
+@font-face {
+    font-family: "CORDATA";
+    src: url("Web437_Cordata_PPC-400.woff");
+}
+
+@font-face {
+    font-family: "IBM";
+    src: url("Web437_IBM_VGA_9x14.woff");
+}
+
+.bbg
+{
+    background-color: rgb(0, 0, 0);
+    font-family: 'CORDATA', Courier, monospace;
+    color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.teletext
+{
+    font-family: 'IBM', Courier, monospace;
+}
+
+.date{
+    display: inline;
+}
+
+.menu
+{
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+.menu li{
+    list-style-type: none;
+}
+
+.menu a{
+    display: block;
+    min-width: 120px;
+    margin: 0.5rem;
+    padding: 0.4rem 0;
+    text-align: center;
+    background-color: blue;
+    color: rgb(255, 255, 0);
+    font-family: 'IBM', Courier, monospace;
+    text-decoration: none;
+    border: 1px;
+}
+
+.updatelog li{
+    list-style-type: none;
+    min-height: 25px;
+}
+
+.center
+{
+    margin:auto;
+}
+
+.left
+{
+    margin-left: 30%;
+}
+
+.right
+{
+    margin-right: auto;
+}
+
+#page {float: left; margin-right: 90px;}
+#ref {float: left; margin-right: 90px;}
+#current_date {float:left;}
+
+.code{
+    color: yellow;
+}
+
+.weather
+{
+    background-color: black;
+    font-family: 'CORDATA', Courier, monospace;
+    color:white;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.wiframe
+{
+    height: 400px;
+    margin: 20px;
+}

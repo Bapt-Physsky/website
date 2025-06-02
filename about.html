@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <title>Bapt_Physsky - A propos</title>
+    </head>
+    <body class="weather">
+        <div class="teletext">
+            <div id="page" class="left" style="color: limegreen;">A PROPOS</div> <div id="ref" class="center">BAPT_PHYSSKY</div> <div id="current_date" class="right" style="color: gold;"></div><br>
+             <script type="text/javascript">
+                 function affichZero(nombre) {
+                     return nombre < 10 ? '0' + nombre : nombre;
+                 }
+                 function current_date(){
+                     date = new Date();
+                     year = date.getFullYear();
+                     month = affichZero(date.getMonth() +1);
+                     day = affichZero(date.getDate());
+                     heure = affichZero(date.getHours());
+                     minutes = affichZero(date.getMinutes());
+                     secondes = affichZero(date.getSeconds());
+                     document.getElementById("current_date").innerHTML = year + " - " + month + " - " + day + " : " + heure + "." + minutes + "/" + secondes ;
+                 }
+                 window.onload = function() {
+                 setInterval("current_date()",100);
+                 };
+             </script>
+        </div>
+        <hr style="color: rgb(255, 255, 255);">
+        <!-- Menu de navigation -->
+        <div>
+            <ul class="menu">
+                <li>
+                    <a href="main.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="about.html">A propos</a>
+                </li>
+                <li>
+                    <a href="meteo.html">Météo</a>
+                </li>
+                <li>
+                    <a href="news.html">Infos</a>
+                </li>
+                <li>
+                    <a href="omsi2.html">OMSI 2</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Bapt-Physsky" target="_blank">GitHub</a>
+                </li>
+                <li>
+                    <a href="other.html">Autres</a>
+                </li>
+                <li>
+                    <a href="log.html">Log</a>
+                </li>
+            </ul>
+        </div>
+        <hr style="color: white;">
+        <h1><center>A PROPOS</center></h1>
+        <hr style="color: rgb(255, 255, 255);">
+        Salut, moi c'est Baptiste ! J'aime la physique (oui, la discipline scientifique), l'informatique, les transports publics, l'idéolinguisme et les JDR. Au plaisir :)
+        <hr style="color: white;">
+        <h3>Mon CV</h3>
+        <h4>Mon boulout</h4>
+        <div>
+            Assistant-Ingénieur en instrumentation et techniques expérimentales au GEOPS (UMR 8148) à l'Université Paris Saclay (2025 - )
+        </div>
+        <h4>Mes publications</h4>
+        <h5>2025</h5>
+        <div>
+            Assessment of the Representativeness and Uncertainties of CTD Temperature Profiles - <a href="http://dx.doi.org/10.3390/jmse13020213" target="_blank" rel="noreferrer noopener">Cliquez ici pour lire</a> (publication en anglais et en accès libre)
+        </div>
+        <h5>2024</h5>
+        <div>
+            Usable hydrogen-storage capacities of Li-decorated borophene nanopores in charge-discharge cycles - <a href="http://dx.doi.org/10.1016/j.est.2024.112172" target="_blank" rel="noreferrer noopener">Cliquez ici pour lire</a> (publication en anglais et en accès libre)
+        </div>
+        <h4>
+            Mes stages
+        </h4>
+        <div>
+            Etude des erreurs d'observation d'instruments utilisés durant les campagnes océanographiques - <a href="https://www.shom.fr/" target="_blank" rel="noreferrer noopener">SHOM</a> - 2024 - Stage de fin d'étude de 6 mois
+        </div>
+        <div>
+            Capacité de stockage volumétrique et gravimétriques de H2 moléculaires par des micropores à base de borophène - <a href="https://www.univ-brest.fr/faculte-sciences/" target="_blank" rel="noreferrer noopener">UBO</a> - 2023 - Stage de Master 1
+        </div>
+        <h4>
+            Mes études
+        </h4>
+        <div>
+            Master Physique Fondamentale & Applications, parcours Physique & Instrumentation - <a href="https://formations.univ-brest.fr/fr/index/sciences-technologies-sante-STS/master-XB/master-physique-fondamentale-et-applications-INR8L8YY//parcours-physique-et-instrumentation-IOMO11CU.html" target="_blank" rel="noreferrer noopener">UBO</a> - 2022-2024
+        </div>
+        <div>
+            Licence de Physique-Chimie, mention physique - <a href="https://formations.univ-brest.fr/fr/index/sciences-technologies-sante-STS/licence-XA/licence-mention-physique-chimie-IOFQZ156//parcours-physique-IOFQZI6M.html" target="_blank" rel="noreferrer noopener">UBO</a> - 2018-2022
+        </div>
+        <hr style="color: white;">
+        <footer>
+            <p>
+                Codé par Bapt_Physsky depuis le 2025.04.19
+            </p>
+            <p>
+                Police "Cordata_PPC-400" & "IBM_VGA_9x14" par <a href="http://int10h.org/oldschool-pc-fonts/">The Ultimate Oldschool PC Font</a> distribuée sous la licence Creative Commons Attribution - Share Alike 4.0 International License <a href="http://creativecommons.org/licenses/by-sa/4.0/">(CC-BY-SA 4.0)</a>             </p>
+        </footer>
+    </body>
+</html>
