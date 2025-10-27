@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <title>Bapt_Physsky - Accueil</title>
+    </head>
+    <body class="weather">
+        <div class="teletext">
+            <div id="page" class="left" style="color: limegreen;">ACCUEIL</div> <div id="ref" class="center">BAPT_PHYSSKY</div> <div id="current_date" class="right" style="color: gold;"></div><br>
+             <script type="text/javascript">
+                 function affichZero(nombre) {
+                     return nombre < 10 ? '0' + nombre : nombre;
+                 }
+                 function current_date(){
+                     date = new Date();
+                     year = date.getFullYear();
+                     month = affichZero(date.getMonth() +1);
+                     day = affichZero(date.getDate());
+                     heure = affichZero(date.getHours());
+                     minutes = affichZero(date.getMinutes());
+                     secondes = affichZero(date.getSeconds());
+                     document.getElementById("current_date").innerHTML = year + " - " + month + " - " + day + " : " + heure + "." + minutes + "/" + secondes ;
+                 }
+                 window.onload = function() {
+                 setInterval("current_date()",100);
+                 };
+             </script>
+        </div>
+        <hr style="color: rgb(255, 255, 255);">
+        <!-- Menu de navigation -->
+        <div>
+            <ul class="menu">
+                <li>
+                    <a href="index.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="about.html">A propos</a>
+                </li>
+                <li>
+                    <a href="meteo.html">Météo</a>
+                </li>
+                <li>
+                    <a href="news.html">Infos</a>
+                </li>
+                <li>
+                    <a href="omsi2.html">OMSI 2</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Bapt-Physsky" target="_blank">GitHub</a>
+                </li>
+                <li>
+                    <a href="other.html">Autres</a>
+                </li>
+                <li>
+                    <a href="log.html">Log</a>
+                </li>
+            </ul>
+        </div>
+        <hr style="color: white;">
+        <h1><center>OMIS 2</center></h1>
+        <hr style="color: rgb(255, 255, 255);">
+        Retrouvez ici tout mes projets, créations et autres trucs et astuces pour le simulateur OMSI 2 !
+        <hr style="color: white;">
+        <div>
+          Lorem ipsum
+        </div>
+        <footer>
+            <p>
+                Codé par Bapt_Physsky depuis le 2025.04.19
+            </p>
+            <p>
+                Police "Cordata_PPC-400" & "IBM_VGA_9x14" par <a href="http://int10h.org/oldschool-pc-fonts/">The Ultimate Oldschool PC Font</a> distribuée sous la licence Creative Commons Attribution - Share Alike 4.0 International License <a href="http://creativecommons.org/licenses/by-sa/4.0/">(CC-BY-SA 4.0)</a>             </p>
+        </footer>
+    </body>
+</html>
